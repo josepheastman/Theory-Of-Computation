@@ -11,6 +11,8 @@ if __name__ == '__main__':
 filename = sys.argv[1]
 
 # TODO Read HTML file
+HtmlFile = open(stackoverflow.html, 'r', encoding='utf-8')
+source_code = HtmlFile.read()
 
 
 # TODO Set up regex
