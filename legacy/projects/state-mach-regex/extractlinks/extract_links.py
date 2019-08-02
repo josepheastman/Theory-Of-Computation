@@ -17,10 +17,11 @@ source_code = HtmlFile.read()
 
 # TODO Set up regex
 regex = re.compile(
-    '^(http(s?)\:\/\/|~/|/)?([a-zA-Z]{1}([\w\-]+\.)+([\w]{2,5}))(:[\d]{1,5})?/?(\w+\.[\w]{3,4})?((\?\w+=\w+)?(&\w+=\w+)*)?')
+    'https?://(?:[-\w.]|(?:%[\da-fA-F]{2}))+')
 
 
 # TODO Find links using regex, save in list called 'matches'
+matches = [re.search("regex, HtmlFile").group("url")]
 
 
 # Check matches, print results
